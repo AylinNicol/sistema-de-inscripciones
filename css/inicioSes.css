@@ -1,0 +1,279 @@
+/*-----------------------------------------FONDO*/
+/*
+body{
+	margin: 0;
+	padding: 0;
+	background-color: #0e6cc4;
+	overflow-x:hidden;
+	overflow-y:hidden;
+}*/
+
+.box {
+	position: fixed;
+	top: 0;
+	transform: rotate(80deg);
+	left: 0;
+}
+
+.wave {
+	position: fixed;
+	top: 0;
+	left: 0;
+  opacity: .4;
+  position: absolute;
+  top: 3%;
+  left: 10%;
+  background: rgb(40, 151, 235);
+  width: 1500px;
+  height: 1300px;
+  margin-left: 50px;
+  margin-top: -550px;
+  transform-origin: 50% 48%;
+  border-radius: 43%;
+  animation: drift 7000ms infinite linear;
+}
+
+.wave.-three {
+  animation: drift 7500ms infinite linear;
+	position: fixed;
+	background-color: rgba(76, 239, 166, 0.656);
+}
+
+.wave.-two {
+  animation: drift 3000ms infinite linear;
+  opacity: .1;
+  background: black;
+	position: fixed;
+}
+
+.box:after {
+  content: '';
+  display: block;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 11;
+  transform: translate3d(0, 0, 0);
+}
+
+@keyframes drift {
+  from { transform: rotate(0deg); }
+  from { transform: rotate(360deg); }
+}
+
+/*LOADING SPACE*/
+.contain {
+	animation-delay: 4s;
+	z-index: 1000;
+	position: fixed;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	right: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+
+  background: #25a7d7;
+  background: -webkit-linear-gradient(#25a7d7, #2962FF);
+  background: linear-gradient(#25a7d7, #25a7d7);
+}
+
+.icon {
+  width: 100px;
+  height: 100px;
+  margin: 0 5px;
+}
+
+/*Animation*/
+.icon:nth-child(2) img {-webkit-animation-delay: 0.2s;animation-delay: 0.2s}
+.icon:nth-child(3) img {-webkit-animation-delay: 0.3s;animation-delay: 0.3s}
+.icon:nth-child(4) img {-webkit-animation-delay: 0.4s;animation-delay: 0.4s}
+
+.icon img {
+  -webkit-animation: anim 2s ease infinite;
+  animation: anim 2s ease infinite;
+  -webkit-transform: scale(0,0) rotateZ(180deg);
+  transform: scale(0,0) rotateZ(180deg);
+}
+
+@-webkit-keyframes anim{
+  0% {
+    -webkit-transform: scale(0,0) rotateZ(-90deg);
+    transform: scale(0,0) rotateZ(-90deg);opacity:0
+  }
+  30% {
+    -webkit-transform: scale(1,1) rotateZ(0deg);
+    transform: scale(1,1) rotateZ(0deg);opacity:1
+  }
+  50% {
+    -webkit-transform: scale(1,1) rotateZ(0deg);
+    transform: scale(1,1) rotateZ(0deg);opacity:1
+  }
+  80% {
+    -webkit-transform: scale(0,0) rotateZ(90deg);
+    transform: scale(0,0) rotateZ(90deg);opacity:0
+  }
+}
+
+@keyframes anim{
+  0% {
+    -webkit-transform: scale(0,0) rotateZ(-90deg);
+    transform: scale(0,0) rotateZ(-90deg);opacity:0
+  }
+  30% {
+    -webkit-transform: scale(1,1) rotateZ(0deg);transform: scale(1,1) rotateZ(0deg);opacity:1
+  }
+  50% {
+    -webkit-transform: scale(1,1) rotateZ(0deg);
+    transform: scale(1,1) rotateZ(0deg);opacity:1
+  }
+  80% {
+    -webkit-transform: scale(0,0) rotateZ(90deg);
+    transform: scale(0,0) rotateZ(90deg);opacity:0
+  }
+}
+
+
+
+/*---------------------------------INGRESO DE DATOS*/
+
+/*.logo img{
+    width: 60px;
+    height: 60px;
+    border-radius: 100%;
+}
+.navlist{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}*
+.myList{
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 250px;
+}
+.list li{
+    display: inline-flex;
+    margin-right: 80px;
+    list-style: none;
+}
+.list li a{
+    font-size: 18px;
+    color: whitesmoke;
+    text-decoration: none;
+}*/
+
+form{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    align-items:center;
+    justify-content:center;
+    display: flex;
+    position: relative;
+    top:50px;
+}
+.loginForm{
+    display: grid;
+    grid-template-columns: 1/2;
+    grid-template-rows: 100px 200px 20px;
+    border-radius: 20px;
+    border: 2px solid rgb(49, 49, 49);
+    width: 350px;
+    height: 350px;
+    background-color: rgba(251, 247, 247, 0.388);
+    backdrop-filter: blur(20px);
+    box-shadow: 2px 5px 15px black;
+}
+.login{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(22, 6, 67);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    background-color: #ffffff00;
+}
+.inputForm{
+    grid-column: 1/2;
+    grid-row: 2/3;
+    display: grid;
+    align-items: center;
+    color: rgb(22, 6, 67);
+    justify-content: center;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+.FormUser,.FormPass{
+    border-bottom: 1px solid rgb(72, 71, 71);
+    background-color: transparent;
+    padding-bottom: 3px;
+}
+#Usuario,#Password{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    transition: all 0.3s ease;
+    margin-left: 5px;
+    letter-spacing: 1px;
+    color: rgb(255, 255, 255);
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#Usuario::placeholder,#Password::placeholder{
+    color: rgba(78, 68, 68, 0.874);
+    font-size: 18px;
+}
+#BtnLogin{
+    background-color: rgb(30, 19, 79);
+    color: whitesmoke;
+    font-size: 20px;
+    height: 35px;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    cursor: pointer;
+    margin: 0px;
+    margin-top: 0px;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+#BtnLogin:active{
+    background-color: rgb(154, 55, 55);
+}
+/*IMAGENES*/
+.logoimagen{
+  background: url('../img/LOGO.png') transparent;
+  background-size: contain ;
+  width: 500px;
+  height: 257px;
+  display: flex;
+  position: absolute;
+  top:60%;
+  left: 1%;
+}
+/*boton mostrar*/
+.toggle-password {
+  position: relative;
+  right: 15px;
+  cursor: pointer;
+  margin-right: 0;
+  color: white;
+}
+
+.toggle-password:hover {
+  color:blue;
+  text-decoration:underline;
+}

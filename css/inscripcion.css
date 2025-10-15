@@ -1,0 +1,105 @@
+svg {
+    position: fixed;
+    /* z-index: index; */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    display: block;
+    background-size: cover;
+}
+
+/* DISEÑO LETRAS */
+#Titulo {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 32px;
+    background-color: #ffffff00;
+}
+
+#Mensaje {
+    font-size: 15px;
+    background-color: #ffffff00;
+    display: flex;
+    justify-content: left;
+}
+
+/* FORMULARIO */
+.content div {
+    border: 0;
+    border-bottom: 1px solid #00000000;
+}
+
+.card div {
+    border: 0;
+    border-bottom: 1px solid #00000000;
+}
+
+hr {
+    border: 0;
+    border-bottom: 1px solid #00000000;
+}
+
+/* para que vaya adelante */
+form {
+    position: relative;
+    /* z-index:1; */
+    /* top:100px; left:300px; width:300px; height:12px; */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+}
+
+label {
+    color: white;
+}
+/*BOTONES*/
+.btn {
+    background:linear-gradient(to left,rgb(6, 14, 70),rgba(19, 178, 141));
+    color: white; /* Color del texto en blanco */
+    border: 3px solid white; /* Borde de 2 píxeles de ancho  */
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+}
+#BtnInscribirse {
+    position: fixed;
+    right: 150px; /* Ajusta la distancia desde el lado derecho */
+    bottom: 30px; /* Ajusta la distancia desde la parte inferior */
+}
+/*SELECCIONAR SI O NO*/
+#op {
+    display: flex;
+    justify-content: end;
+}
+
+@media (max-width: 767px) {
+    label {
+        font-size: 16px;
+    }
+    input[type="text"] {
+        font-size: 16px;
+    }
+    .col-md-3 {
+        display: block;
+    }
+
+    #BtnBuscar {
+        position: relative;
+        top: 0;
+        width: auto; 
+        margin-left: 10px;
+    }
+    .search-button-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+     #BtnInscribirse {        
+        position: relative;
+        margin: 10px auto;
+        text-align: center;
+        display: block;
+        bottom: 20px;
+        left: 0px; 
+        bottom: 20px;
+    }
+}

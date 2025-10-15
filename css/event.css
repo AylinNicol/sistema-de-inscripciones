@@ -1,0 +1,345 @@
+/*FONDO*/
+@import url("https://fonts.googleapis.com/css?family=Montserrat:700");
+
+.hero {
+    background-color: #0040c1;
+    position: fixed;
+    height: 100vh;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.hero__title {
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+    z-index: 1;
+}
+
+.cube {
+    position: absolute;
+    top: 80vh;
+    left: 45vw;
+    width: 10px;
+    height: 10px;
+    border: solid 1px #003298;
+    -webkit-transform-origin: top left;
+    transform-origin: top left;
+    -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    transform: scale(0) rotate(0deg) translate(-50%, -50%);
+    -webkit-animation: cube 12s ease-in forwards infinite;
+    animation: cube 12s ease-in forwards infinite;
+}
+
+.cube:nth-child(2n) {
+    border-color: #05258f;
+}
+
+.cube:nth-child(2) {
+    -webkit-animation-delay: 2s;
+    animation-delay: 2s;
+    left: 25vw;
+    top: 40vh;
+}
+
+.cube:nth-child(3n) {
+    border-color: #5dbbf5;
+}
+
+.cube:nth-child(3) {
+    -webkit-animation-delay: 4s;
+    animation-delay: 4s;
+    left: 75vw;
+    top: 50vh;
+}
+
+.cube:nth-child(4n) {
+    border-color: #4cefa6;
+}
+
+.cube:nth-child(4) {
+    -webkit-animation-delay: 6s;
+    animation-delay: 6s;
+    left: 90vw;
+    top: 10vh;
+}
+
+.cube:nth-child(5n) {
+    border-color: #05258f;
+}
+
+.cube:nth-child(5) {
+    -webkit-animation-delay: 8s;
+    animation-delay: 8s;
+    left: 10vw;
+    top: 85vh;
+}
+
+.cube:nth-child(6n) {
+    border-color: #5dbbf5;
+}
+
+.cube:nth-child(6) {
+    -webkit-animation-delay: 10s;
+    animation-delay: 10s;
+    left: 50vw;
+    top: 10vh;
+}
+
+.cube:nth-child(7n) {
+    border-color: #4cefa6;
+}
+
+.cube:nth-child(7) {
+    -webkit-animation-delay: 12s;
+    animation-delay: 12s;
+    left: 60vw;
+    top: 50vh;
+}
+
+@-webkit-keyframes cube {
+    from {
+        -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    to {
+        -webkit-transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+@keyframes cube {
+    from {
+        -webkit-transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        transform: scale(0) rotate(0deg) translate(-50%, -50%);
+        opacity: 1;
+    }
+
+    to {
+        -webkit-transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        transform: scale(20) rotate(960deg) translate(-50%, -50%);
+        opacity: 0;
+    }
+}
+
+/*EVENTOS*/
+.general {
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #ffffff;
+}
+
+h1 {
+    font-size: 32px;
+    text-align-last: center;
+}
+
+p {
+    font-size: 18px;
+}
+
+.general img {
+    max-width: 80%;
+    /*float: right;*/
+    border: 3px solid #ffffff;
+    border-radius: 10px;
+}
+
+.Gestionar {
+    background-color: rgba(255, 255, 255, 0);
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    margin-left: 5%;
+    margin-right: 5%;
+    /*z-index: 99;*/
+}
+
+table {
+    /*background-color: rgba(29, 214, 168, 0.47);*/
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+}
+
+.btn {
+    background: linear-gradient(to left, rgb(6, 14, 70), rgba(19, 178, 141));
+    color: white;
+    /* Color del texto en blanco */
+    border: 3px solid white;
+    /* Borde de 2 píxeles de ancho  */
+    font-size: 20px;
+}
+
+.imagen-clickeable {
+    cursor: pointer;
+    transition: transform 0.2s;
+}
+
+.imagen-ampliada {
+    transform: scale(1.5);
+    /* Ampliar la imagen al 150% del tamaño original al hacer clic */
+    z-index: 1;
+    /* Colocar la imagen ampliada por encima de otros elementos */
+    position: fixed;
+    top: 50%;
+    /* Centrar verticalmente */
+    left: 50%;
+    /* Centrar horizontalmente */
+    transform: translate(-50%, -50%);
+    /* Mover la imagen hacia arriba y hacia la izquierda para centrarla */
+    transition: transform 0.2s;
+    /* Agregar una transición para suavizar el efecto */
+    width: 400px;
+}
+
+/*expositoreeeee*/
+.contenido {
+    max-width: 1100px;
+    width: 100%;
+    margin: 50px auto;
+    display: flex;
+    position: relative;
+}
+
+.generales {
+    position: relative;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #000000;
+    text-align-last: center;
+    max-width: 100%;
+    /*background: linear-gradient(to bottom, #182262, #0f1854);*/
+}
+
+.Mostrador {
+    width: 100%;
+    transition: .5s ease;
+}
+
+.Mostrador .fila {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 40px;
+}
+
+.Mostrador .fila .item {
+    /*CAJA ajustable de COLOR*/
+    max-width: 100%;
+    padding: 5px;
+    text-align: center;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: .3s;
+    display: block;
+    /* Hacer que la imagen sea un bloque para permitir el centrado */
+    margin: 0 auto;
+}
+
+.Mostrador .fila .item:hover {
+    background-color: rgba(19, 178, 141, 0.89);
+    padding: 5px;
+}
+
+.Mostrador .fila .item img {
+    /*ajustes del icono*/
+    width: 200px;
+    margin: 30px 50;
+    border-radius: 20px;
+}
+
+.Mostrador .fila .item img:hover {
+    /*ajustes para la transicion de los iconos*/
+    transform: scale(0.95);
+    transition: .3s;
+}
+
+.Mostrador .fila .item .descripcion {
+    /*ajustes del texto*/
+    color: #0f1854;
+    font-weight: bold;
+    text-align: center;
+}
+
+#modalExpositores .modal-dialog {
+    max-width: 20%;
+}
+
+#modalPrograma .modal-dialog {
+    max-width: 70%;
+    /* Ajusta el ancho máximo para celulares */
+}
+
+@media (max-width: 1024px) {
+    #modalExpositores .modal-dialog {
+        max-width: 25%;
+        /* Ajusta el ancho máximo para celulares */
+    }
+}
+
+@media (max-width: 768px) {
+    #modalExpositores .modal-dialog {
+        max-width: 30%;
+        /* Ajusta el ancho máximo para celulares */
+    }
+}
+
+@media (max-width: 480px) {
+
+    .Gestionar {
+        font-size: 12px;
+    }
+
+    .btn {
+        font-size: 9px;
+    }
+
+    /*.item {
+        width: 100%;
+        height: auto;
+    }*/
+    .Mostrador .fila {
+        flex-direction: column;
+        display: block;
+    }
+
+    .Mostrador .fila .item {
+        margin-bottom: 30px;
+        display: block;
+    }
+
+    .Mostrador .fila .item .descripcion {
+        display: block;
+    }
+
+    #modalExpositores .modal-dialog {
+        max-width: 70%;
+        /* Ajusta el ancho máximo para celulares */
+        margin: 0 auto;
+    }
+
+    #modalPrograma .modal-dialog {
+        max-width: 98%;
+        /* Ajusta el ancho máximo para celulares */
+        margin: 0 auto;
+    }
+}
+
+@media (max-width: 375) {
+    #modalExpositores .modal-dialog {
+        max-width: 80%;
+        /* Ajusta el ancho máximo para celulares */
+    }
+
+    #modalPrograma .modal-dialog {
+        max-width: 98%;
+        /* Ajusta el ancho máximo para celulares */
+        margin: 0 auto;
+    }
+}

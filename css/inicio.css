@@ -1,0 +1,178 @@
+body {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* Estilos para la sección... */
+.section-padding {
+    padding: 30px 0;
+    background-color: white;
+}
+
+/* Estilo del botón */
+.btn {
+    background:linear-gradient(to left,rgb(6, 14, 70),rgba(19, 178, 141));
+    color: white; /* Color del texto en blanco */
+    border: 3px solid white; /* Borde de 2 píxeles de ancho  */
+    font-size: 20px;
+}
+.carousel-item{
+    height: 88vh;
+    min-height: 300px;
+}
+
+.carousel-caption{
+    bottom: 200px;
+    z-index: 2;
+}
+.carousel-caption h3{
+    font-size: 32px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-top: 25px;
+}
+
+.carousel-caption p {
+   width: 60%;
+   margin: auto;
+   font-size: 18px;
+   line-height: 1.9;     
+}
+.carousel-inner::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgb(red, rgb(223, 234, 223), blue);
+    z-index: 1;
+}
+.w-100 {
+    height: 100vh;
+    background-color: #6aff00;
+}
+.services .card-body i {
+    font-size:50px ;
+}
+.team .card-body i{
+    font-size: 20px;
+}
+/* Estilos generales para el pie de página */
+.pie {
+    background-color: rgba(19, 178, 141, 0.89);
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+    font-size: 18px;
+}
+
+/* Estilos para el logo */
+.img-logo {
+    width: 100px;
+    height: auto;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+/* Cambiar el tamaño y color del texto en la clase .logotipo */
+.logotipo {
+    font-size: 20px; /* Cambiar el tamaño del texto a 24px (ajusta según tus preferencias) */
+    color: white; /* Cambiar el color del texto a naranja (#ff5733), puedes usar tu propio color preferido */
+    align-items: center;
+}
+
+/* Estilos para las redes sociales */
+.fb {
+    background-color: #1877f2; /* Color de Facebook */
+}
+.tw {
+    background-color: #1da1f2; /* Color de Twitter */
+}
+.in {
+    background-color: #bc2a8d; /* Color de Instagram */
+}
+.li {
+    background-color: #0077b5; /* Color de LinkedIn */
+}
+.yt {
+    background-color: #ff0000; /* Color de YouTube */
+}
+/* Estilos comunes para los íconos de redes sociales */
+.redes a {
+    font-size: 23px;
+    padding: 8px;
+    border-radius: 30%;
+    margin: 0 10px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.redes a:hover {
+    opacity: 0.8;
+}
+
+/* Estilos para la parte de abajo del pie de página (derechos de autor y políticas) */
+.derechos {
+    font-size: 15px;
+    line-height: 1.5;
+    background-color: #212b6f;
+    background-image: linear-gradient(to bottom, rgba(6, 13, 70, 0.90), #212b6f);
+    padding: 20px;
+}
+
+
+/* Estilos específicos del pie de página... */
+@media(max-width: 767px) {
+    .carousel-item{
+        height: 70vh;
+    }
+    .w-100 {
+        height: 70vh;
+    }
+    .carousel-caption{
+        bottom: 125px;
+       
+    }
+    .carousel-caption h3{
+        font-size: 28px;
+    
+    }
+    .carousel-caption a {
+        padding: 10px 20px;
+        font-size: 15px;
+    }
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.5;
+        font-size: 14px;
+    }
+    .about-text{
+        padding-top: 40px;
+    }
+    .section-padding{
+        padding-top: 100px 0;
+        background-color: white;
+    }
+}
+/* Media query para ajustar estilos en pantallas pequeñas */
+@media screen and (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        align-items: center;
+    }
+    .logotipo {
+        margin-top: 10px;
+    }
+    .redes {
+        margin-top: 20px;
+    }
+    .redes span {
+        margin: 0 5px;
+    }
+    .derechos {
+        font-size: 15px;
+    }
+}

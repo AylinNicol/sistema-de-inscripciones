@@ -1,0 +1,84 @@
+/*globales*/
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/*FONDO*/
+html, body {
+    height: 100%; /* Asegura que el cuerpo de la página ocupa toda la altura */
+    margin: 0; /* Elimina márgenes predeterminados */
+    padding: 0; /* Elimina relleno predeterminado */
+}
+body{
+    background: linear-gradient(to bottom, #182262, #0f1854);
+    background-size: contain;
+    background-attachment: fixed;
+}
+
+/*-----------MENU-----------*/
+/*borde*/
+nav {
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-bottom-color: rgba(255, 255, 255, 0.241);
+}
+
+ul.dropdown-menu {
+    background-color:rgba(241, 243, 241, 0.8);
+    
+}
+
+ul.dropdown-menu li:hover > a {
+    background-color:rgba(19, 178, 141);
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight:650;
+    font-style: oblique;
+    color: rgba(6, 14, 70, 0.889);
+}
+.navbar-nav a{
+     text-transform: uppercase;
+    font-weight: 500;
+}
+.navbar-nav .nav-link {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight:650;
+    font-style: oblique;
+    color:white;
+}
+.imagen-menu {
+    width: 40px; /* Ancho deseado */
+    height: auto; /* Altura automática para mantener la proporción */
+    float: left; /* Establece la imagen a la izquierda del texto */
+    margin-right: 10px; /* Agrega un espacio entre la imagen y el texto */
+   
+}
+.navbar-dark .navbar-brand {
+    color: white;
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+.nav-toggle {
+    padding: 1px 5px;
+    font-size: 18px;
+    line-height: 0.3;
+}
+
+@media(max-width: 767px) {
+    .navbar-nav {
+        text-align: left;
+    }
+    /*.navbar-brand {
+        margin-left: 90px; 
+    }*/
+    .navbar-nav .nav-link, .dropdown-menu {
+        text-align: left;
+        margin-left: -80px;
+    }
+    .navbar-brand {
+        margin-left: 10px; 
+    }
+}
+

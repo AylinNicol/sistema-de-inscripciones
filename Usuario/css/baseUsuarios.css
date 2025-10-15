@@ -1,0 +1,165 @@
+/*<span style="font-family: verdana, geneva, sans-serif;"> /*  import google fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+*{
+  margin: 0;
+  padding: 0;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+body{
+  background: rgb(255, 255, 255);
+}
+nav{
+  position: relative;
+  top: 0;
+  bottom: 0;
+  height: 100vh;
+  width: 80px;
+  left: 0%;
+  background: linear-gradient(to bottom, #182262, #0f1854);
+  overflow: hidden;
+}
+nav:hover{
+  width: 395px;
+  display: block;
+  transition-duration: 1s;
+}
+
+.logo{
+  text-align: center;
+  display: flex;
+  align-items: center;
+  padding-bottom: 15px;
+  position: relative;
+  width: 395px;
+  font-size: 15px;
+  color: white;
+  padding-left: 5px;
+}
+.logo img{
+  width: 70px;
+  height: auto;
+  border-radius: 30%;
+}
+.logo span{
+  text-align: left;
+  padding-left: 15px;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding-left: 20px;
+}
+.aa{
+  position: relative;
+  width: 395px;
+  font-size: 15px;
+  color: white;
+  display: table;
+  padding: 3px;
+  padding-left: 20px;
+}
+.aa span{
+  text-align: left;
+  padding-left: 20px;
+  font-size: 15px;
+}
+.aa:hover{
+  background: rgba(19, 178, 141);
+  width: 395px;
+}
+.aa:hover i{
+  color: white;
+  transition: 0.5s;
+}
+nav .fas{
+  position: relative;
+  width: 40px;
+  height: 30px;
+  font-size: 20px;
+  text-align: center;
+  align-items: center;
+  
+}
+.nav-item{
+  position: relative;
+  text-align: center;
+  font-size: 15px;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-style: oblique;
+  font-weight: bold;
+}
+
+/* Estilo para el menú desplegable */
+.dropdown-content {
+  display: none;
+  position: relative;
+  background-color:rgba(241, 243, 241, 0.8);
+  min-width: 395px;
+  z-index: 1;
+}
+ 
+/* Estilo para los enlaces dentro del menú desplegable */
+.dropdown-content a {
+  color: black;
+  padding: 5px 30px;
+  text-decoration: none;
+  display: block;
+  font-size: 15px;
+}
+  
+/* Estilo para el enlace cuando se pasa el ratón sobre él */
+.dropdown-content a:hover {
+  background-color:rgba(19, 178, 141);
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 15px;
+  font-weight:650;
+  font-style: oblique;
+  color: rgba(6, 14, 70, 0.889);
+}
+  
+/* Mostrar el menú desplegable cuando se pasa el ratón sobre el elemento de lista */
+.dropdown:hover .dropdown-content {
+  display: grid;
+}
+
+.logout{
+  position: absolute;
+  bottom: 0;
+  width: 395px;
+  font-size: 15px;
+  color: white;
+  display: table;
+  padding: 10px;
+  padding-left: 20px;
+}
+.logout span{
+  text-align: left;
+  padding-left: 20px;
+  font-size: 15px;
+}
+.logout:hover{
+  background: rgba(19, 178, 141);
+  width: 395px;
+}
+.logout:hover i{
+  color: white;
+  transition: 0.5s;
+}
+.container{
+  margin-left: 0px;
+  left: -15px;
+  position: fixed;
+  z-index: 100;
+  display: block;
+  width: 80px;
+}
+
+
+h1 {
+  font-size: 34px;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgba(6, 13, 70, 0.90);
+  text-align: center;
+  background: rgba(19, 178, 141);
+}
