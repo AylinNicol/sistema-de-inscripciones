@@ -44,4 +44,4 @@ Finalizado.
 
 ## Licencia
 
-Este proyecto se distribuye únicamente con fines educativos y como parte de mi portafolio profesional.
+MIT License.
