@@ -1,38 +1,47 @@
-Sistema de Inscripciones a Eventos Académicos
+# Sistema de Inscripciones a Eventos Académicos
+
 Sistema web desarrollado como proyecto académico para facilitar el registro e inscripción de estudiantes en eventos académicos, permitiendo una gestión organizada de la información.
 
-Descripción
+## Descripción
+
 La aplicación permite registrar participantes, administrar eventos y gestionar las inscripciones mediante una interfaz web sencilla e intuitiva.
 
-Funcionalidades
+## Funcionalidades
+
 - Registro de participantes.
 - Gestión de eventos académicos.
 - Inscripción de participantes a eventos.
 - Administración de la información almacenada.
-- Generación de Certificados por evento.
+- Validación de formularios.
 
-Tecnologías utilizadas
+## Tecnologías utilizadas
+
 - HTML5
 - CSS3
 - PHP
 - MySQL
 
-Herramientas
+## Herramientas
+
 - Visual Studio Code
 - XAMPP
 - Git
 
-Metodología
+## Metodología
+
 Proyecto desarrollado con fines académicos durante la carrera de Ingeniería Informática.
 
-Autores
+## Autores
+
 Proyecto desarrollado de forma colaborativa por estudiantes de Ingeniería Informática de la Facultad Naciona de Ingeniería (UTO, Bolivia).
 - Aylin Nicol Nina Hannover
 - Mariana Mamani Ala
 - Samantha Porrez
 
-Estado del proyecto
+## Estado del proyecto
+
 Finalizado.
 
-Licencia
+## Licencia
+
 Este proyecto se distribuye únicamente con fines educativos y como parte de mi portafolio profesional.
